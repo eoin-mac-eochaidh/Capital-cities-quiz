@@ -86,7 +86,7 @@ function readQuestion(questionArray){
 };
 
 function wrapup(){
-    console.log('Your final results are in');
+    console.log('\x1b[31m','Your final results are in');
     console.log(score);
     readline.close(); //// Try and figure this out. The readline.close() does not close user input. Program does not exit in best fashion. Using process.exit as temp work around 
     process.exit(-1);
